@@ -135,6 +135,7 @@ class MainActivity : AppCompatActivity(),org.vosk.android.RecognitionListener {
           // previousValue=resultFromJson.partial
        }
 
+
     }
 
     override fun onResult(hypothesis: String?) {
