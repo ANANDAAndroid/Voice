@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/double_thumb_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        style="@style/Widget.App.Slider"
+        app:values="@array/initial_slider_values"
+        app:trackColorActive="@color/red"
+        app:trackColorInactive="@color/red"
+        app:trackHeight="5dp"
+        app:thumbColor="@color/red"
+        app:thumbRadius="12dp"
+        app:thumbElevation="1dp"
+        app:tickVisible="false"
+        app:haloColor="#3DE60707"
+        app:haloRadius="20dp"
+        android:stepSize="1.0"
+        app:labelBehavior="floating"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
